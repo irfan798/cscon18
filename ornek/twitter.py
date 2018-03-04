@@ -9,26 +9,26 @@ Created on Sun Mar  4 03:29:19 2018
 
 import twitter
 
-api = twitter.Api(consumer_key='Consumer Key',
-                      consumer_secret='Consumer Secret',
-                      access_token_key='Access Token Key',
-                      access_token_secret='Access Token Secret')
+api = twitter.Api(consumer_key='HxYX1P9MS0uxLMl4e3LQaCyEW',
+                      consumer_secret='HS8T2ZtkxQHHfiGDxPKWMH3s2SGNpUKSIAijyzqVdIADqN9CxZ',
+                      access_token_key='362514116-FiN45pQonlJLWCFl76wObB1GNJEpgxeFG3chsuYQ',
+                      access_token_secret='i7LiQ29xw9vaEwQWG2yLWDbTERrIzTsY5MzAoxzL2sQgh')
 
 
-print(api.VerifyCredentials())
+api.VerifyCredentials()
 
 # Tweet Post
-status = api.PostUpdate('#pwnlydays_python twitter bot !')
-print(status.text)
+#status = api.PostUpdate('#pwnlydays_python twitter bot !')
+#print(status.text)
 
 # Get Users
-users = api.GetFriends()
-print([u.name for u in users])
+#users = api.GetFriends()
+#print([u.name for u in users])
 
 # Get Timeline
-timeline = api.GetHomeTimeline()
-print([s.text for s in timeline])
+#timeline = api.GetHomeTimeline()
+#print([s.text for s in timeline])
 
 # Get post a user
-statuses = api.GetUserTimeline(screen_name="binitamshah")
+statuses = api.GetUserTimeline(screen_name="bsronn")
 print([s.text for s in statuses])
